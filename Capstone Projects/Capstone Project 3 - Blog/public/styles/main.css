@@ -1,0 +1,21 @@
+body {
+  background-color: #fff8f0;
+  font-family: Georgia, serif;
+}
+
+header {
+  background-color: #ff6b35;
+  padding: 20px;
+  color: white;
+}
+
+h1 {
+  color: white;
+  font-size: 3rem;
+}
+  
+  .text-dark {
+
+    color:black;
+
+  }

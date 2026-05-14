@@ -1,0 +1,25 @@
+
+.libre-baskerville-<uniquifier> {
+  font-family: "Libre Baskerville", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+body {
+background-color: black;
+}
+
+.poster {
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 100px;
+    color: white;
+    font-family: "Libre Baskerville", serif;
+    text-align: center;
+}
+
+.motivation-img {
+    border: 5px solid white;
+    width: 100%;
+}

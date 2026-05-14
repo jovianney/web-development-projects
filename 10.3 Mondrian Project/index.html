@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+   .container {
+  display: grid;
+  background-color: black;
+  gap: 15px;
+  width: 1000px;
+  height: 1000px;
+
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(24, 1fr);
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.one {
+  background-color: red;
+  grid-area: 1 / 1 / 15 / 6;
+}
+
+.two {
+  background-color: #f0f1ec;
+  grid-area: 1 / 6 / 15 / 13;
+}
+
+.three {
+  background-color: #f0f1ec;
+  grid-area: 15 / 1 / 24 / 6;
+}
+
+.four {
+   background-color: #f0f1ec;
+   grid-area: 15 / 6 / 24 / 12
+}
+
+.five {
+  background-color: #004592;
+  grid-area: 15 / 12 / 19 / 13;
+  border-bottom: 12px solid black;
+  box-sizing: border-box;
+}
+
+.six {
+   background-color: #f0f1ec;
+   grid-area: 19 / 12 / 25 / 13
+}
+
+.seven {
+  background-color: #F9D01E;
+  grid-area: 24 / 6 / 25 / 9
+}
+
+.eight {
+  background-color: darkgrey;
+  grid-area: 24 / 9 / 25 / 12
+}
+
+.nine {
+  background-color: #f0f1ec;
+  grid-area: 24 / 1 / 25 / 6
+}
+    
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+   <div class="container">
+    
+    <div class="item one"></div>
+    <div class="item two"></div>
+    <div class="item three"></div>
+    <div class="item four"></div>
+    <div class="item five"></div>
+    <div class="item six"></div>
+    <div class="item seven"></div>
+    <div class="item eight"></div>
+    <div class="item nine"></div>
+
+   </div>
+</body>
+
+</html>

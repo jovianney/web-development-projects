@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+<style>
+.mainheader {
+  background: linear-gradient(135deg, #e0f2ff, #c7e9ff, #a5d8ff);
+  padding-top: 60px;
+  padding-bottom: 60px;
+  position: relative;
+}
+
+.fascinate-inline-regular {
+  font-family: "Fascinate Inline", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+font-family: "Fascinate Inline", system-ui;
+  font-weight: 400;
+  font-style: normal; 
+}
+
+h1, h2 {
+  color: #2f3e46; /* soft charcoal with blue undertone */
+}
+
+h3 {
+  color: #6c8a96; /* desaturated blue-gray */
+  z-index: 1;
+}
+
+.hello {
+  font-size: 45px;
+}
+
+.skillsh2 {
+  font-size: 45px;
+}
+
+.skills {
+  font-family: arial;
+}
+
+.intro {
+  font-family: arial;
+  width: 80%;
+  max-width: 500px;
+  margin: auto;
+  color: #6c8a96; 
+}
+
+hr {
+  border: none;
+  border-top: 6px dotted #c7d3da;
+  width: 60px;
+  margin: 90px auto;
+}
+
+a {
+  color: #0071e3;
+  text-decoration: none;
+}
+
+p {
+  line-height: 30px;
+}
+
+.hero-visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-top: 50px;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.dumbbell {
+  height: 200px;
+  opacity: 0.9;
+  filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.15));
+}
+
+.arrow {
+  height: 90px;
+  opacity: 0.8;
+  filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.15));
+}
+
+.laptop {
+  height: 260px;
+  opacity: 0.95;
+  filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.15));
+}
+
+.cloud {
+  position: absolute;
+  opacity: 0.7;
+  z-index: 0;
+  filter: drop-shadow(0 6px 12px rgba(0,0,0,0.05));
+}
+
+
+.cloud-1 {
+  top: 20%;
+  right: 10%;
+  width: 300px;
+}
+
+.cloud-2 {
+  top: 10%;
+  left: 17%;
+  width: 180px;
+  opacity: 0.7;
+}
+
+.me {
+  height: 175px;
+  border-radius: 50%;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  max-width: 900px;
+  margin: 100px auto 0 auto;
+  text-align: left;
+  gap: 20px;
+}
+
+.contact-me {
+  text-align: center;
+  margin: 0 auto;
+  line-height: 70px;
+  max-width: 500px;
+}
+
+
+
+/*images*/
+
+.dog {
+  height: 250px;
+}
+
+.codedog {
+  height: 250px;
+}
+
+.hotwings {
+  line-height: 70px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/*xxxxx*/
+
+.btn {
+  background: linear-gradient(135deg, #74c0fc, #4dabf7);
+  border: none;
+  border-radius: 12px;
+
+  font-family: "Fascinate Inline", system-ui;
+  color: #E9F4FC;
+  font-size: 18px;
+
+  padding: 12px 28px;
+  display: inline-block;
+
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+  transition: all 0.25s ease;
+
+}
+
+.bottom-container {
+  background: linear-gradient(135deg, #e0f2ff, #c7e9ff, #a5d8ff);
+  padding: 50px 0 20px;
+  margin-top: 75px;
+  text-align: center;
+}
+
+.footer-link {
+  margin: 0 10px;
+}
+
+.copyright {
+  line-height: 70px;
+}
+ 
+
+  .cloud-2 {
+    top: 0;
+    left: 5%;
+    width: 120px;
+  }
+
+@media (max-width: 768px) {
+  .parent {
+    grid-template-columns: 1fr;
+    width: 90%;
+    text-align: center;
+  }
+
+  .codedog,
+  .dog {
+    margin: 0 auto;
+    display: block;
+  }
+
+  img {
+  max-width: 100%;
+  height: auto;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+ <!--header--> 
+<div class="mainheader position-relative overflow-hidden text-center">
+
+  <img src="./cloud.png" class="cloud cloud-1" alt="Cloud">
+  <img src="./cloud.png" class="cloud cloud-2" alt="cloud">
+  
+<div class="col-md-10 p-lg-5 mx-auto my-5 hero-content"> <h1 class="display-3 fw-bold">I'm Jovi</h1> <h3 class="fw-normal mb-3">Transitioning from Fitness to Tech</h3> 
+
+<div class="hero-visual">
+  <img class="dumbbell" src="./dumbbell.png" alt="Dumbbell">
+  <img class="arrow" src="./arrow.png" alt="Arrow">
+  <img class="laptop" src="./laptop.png" alt="Laptop">
+</div>
+ </a> </div> </div> <div class="product-device shadow-sm d-none d-md-block"></div> <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div> </div>
+
+ <!--profile-->
+ <hr>
+<div class="profile">
+      <img class="me d-block mx-auto mb-5" src="./me.png" alt="Jovi">
+      <p class="hello text-center">Hello.</p>
+      <p class="intro text-center">Former fitness trainer pivoting into tech.</p>
+    </div>
+    <hr>
+
+    <!--skills-->
+    <div class="skills">
+      <h2 class="skillsh2 text-center">My Skills</h2>
+      <div class="parent">
+        <div class="typing">
+          <img class="codedog" src="./code.png" alt="Coding Chihuahua">
+        </div>
+        <div class="coding">
+          <h3>From Fitness to Tech</h3>
+          <p class="skillsp">I’m in the middle of a career pivot from fitness into tech, focusing on IT, systems, and coding. I’ve been building my skills through structured learning and hands-on practice, with the goal of turning curiosity into real technical ability. I enjoy learning how systems work, how to troubleshoot them, and how to keep improving one step at a time.</p>
+        </div>
+        <div class="chillies">
+          <img class="dog" src="./dog.webp" alt="Gym Dog">
+        </div>
+        <div class="hot-wings">
+          <h3>Coaching, Leadership & Discipline</h3>
+          <p class="skillsp">I spent over a decade in the fitness industry as a personal trainer and group fitness instructor, working across different gyms and corporate tech sites. That background taught me how to communicate clearly, lead people, stay disciplined, and keep showing up consistently. Even though I’m moving into tech, that same mindset still drives how I learn and work today.</p>
+        </div>
+
+      </div>
+
+
+      <hr>
+
+      <!--contact-->
+      <div class="contact-me">
+        <h2 class="fs-1">Get In Touch</h2>
+        <h3 class="hotwings">Building something new, one step at a time.</h3>
+
+<p class="contact-message">
+I’m currently transitioning into tech and documenting the process. If you're doing the same or just getting started, let’s connect and grow.
+</p>
+        <a class="btn" href="mailto:jovianney@ymail.com">Contact Me</a>
+      </div>
+    </div>
+
+      <!--footer-->
+      <div class="bottom-container">
+    <a class="footer-link" href="https://www.linkedin.com/in/angela-yu-963a584b/">LinkedIn</a>
+    <a class="footer-link" href="https://twitter.com/yu_angela">Twitter</a>
+    <a class="footer-link" href="https://www.appbrewery.com/">Website</a>
+    <p class="copyright text-center">© Jovi Cruz</p>
+  </div>
+
+</body>
+</html>
